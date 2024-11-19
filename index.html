@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCode</title>
+    
+    <link rel="icon" href="Icons/weather-app.png" type="image/x-icon">
+</head>
+<style>
+    h1, h2, h3, p{
+        font-family: Arial;    
+    }
+   .container{
+       width: 100%;
+       text-align: center;
+   }
+   img{
+       width: 25px; 
+   }
+   .top-icon{
+       width: 35px;
+       margin-top: 10px;
+   }
+   .tab-container{
+       padding: 10px;
+   }
+   .tab-container:hover{
+       width: 350px;
+       border-radius: 15px;
+       background-color: rgba(255, 255, 0, 0.384);
+       margin: auto;   
+    }
+   .weather-text{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin: 0;
+   }
+   h1{
+       color: blue;
+       font-size: 35px;
+   }
+   h2{
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0;
+   }
+   h3{
+       font-size: 17px;
+       margin-left: 10px;
+   }
+   p{
+       font-family: 'Courier New';
+       font-size: 15px;
+       margin: 0;
+   }
+   button{
+       background-color: blue;
+       border: 0;
+       padding: 17px;
+       border-radius: 50px;
+       color: white;
+       cursor: pointer;
+       margin: 30px 0;
+   }
+   button:hover{
+       background-color: rgba(255, 255, 0, 0.384);
+       color: black;
+   }
+   .footer{
+       font-family: 'Courier New';
+       
+   }
+</style>
+<body>
+    <div class="container">
+        <img class="top-icon" src="Icons/cloudy.png" alt="Partly cloudy icon">
+        <h1> Currently 21&#176 in Tokyo </h1>
+
+        <h2> 13&#176  /  <b>23&#176 </b></h2>
+
+        <br>
+        <div class="tab-container">
+            <div class="weather-text">
+                <img src="Icons/heavy-rain.png" alt="Rainy icon">
+                <h3>Tomorrow</h3>
+            </div>
+            <p> 10&#176 / <b>22&#176 </b></p>
+        </div>
+
+       <div class="tab-container">
+            <div class="weather-text">
+                <img src="Icons/rainy-day.png" alt="Cloudy icon">
+                <h3>Saturday</h3>
+            </div>
+            <p> 15&#176 / <b>17&#176 </b></p>
+       </div>
+ 
+       <div class="tab-container">
+            <div class="weather-text">
+                <img src="Icons/sun.png" alt="Sunny icon">
+                <h3>Sunday</h3>
+            </div>
+            <p> 25&#176 / <b>28&#176 </b></p>
+       </div>
+
+        <button> Change city</button>
+
+        <p class="footer">Coded by Thabiso Maredi</p>
+    </div>
+</body>
+</html>
